@@ -4,5 +4,14 @@
   "description": "Content editor for blogs",
   "main": "app.js",
   "author": "Tino Thamjarat",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "quill": "^1.3.5"
+  },
+  "devDependencies": {
+    "webpack": "^3.11.0",
+    "webpack-bundle-analyzer": "^2.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
 }
