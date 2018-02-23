@@ -1,0 +1,8 @@
+{
+  "name": "content-editor",
+  "version": "1.0.0",
+  "description": "Content editor for blogs",
+  "main": "app.js",
+  "author": "Tino Thamjarat",
+  "license": "MIT"
+}
