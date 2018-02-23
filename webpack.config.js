@@ -2,7 +2,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const path = require("path")
 
 const config = {
-  entry: ["babel-polyfill", "./src/app.js"],
+  entry: ["./src/app.js"],
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/assets/",
