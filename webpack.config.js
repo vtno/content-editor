@@ -1,6 +1,8 @@
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin
 const path = require("path")
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const webpack = require('webpack');
 
 const config = {
   entry: ["./src/app.js"],
@@ -14,7 +16,12 @@ const config = {
   },
   devServer: { inline: true },
   devtool: "eval",
-  plugins: [new BundleAnalyzerPlugin()],
+  plugins: [
+    new BundleAnalyzerPlugin(),
+    new LodashModuleReplacementPlugin({
+      collection: true
+    })
+  ],
   module: {
     rules: [
       {
